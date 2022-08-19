@@ -1,3 +1,4 @@
+<?php //print_r($_SERVER["var"]);?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -52,21 +53,22 @@ audio
 </style><script async custom-element="amp-audio" src="https://cdn.ampproject.org/v0/amp-audio-0.1.js"></script>
 </head>
  <body  align="center" onclick="playVid()"  >
-
-<button class="box"  src="<?=base_url('imagesweb/play-button.png')?>" style=""   > </button>
+<?php if($result->inmedia!='0'){?>
+<button class="box"  src="<?=base_url('imagesweb/play-button.png')?>" style=""   > </button><?php }?>
 <h1><?php print_r($result->phamacy_title);?></h1>
  
 
 
 
 
-<div>
-<img  style="padding:20px;"    src="data:image/jpeg;base64,<?=base64_encode($result->image_title)?>" width="700"   /><br>
-<audio  id="test-audio-element" height="240"
- width="300" height="32" controls="controls"  src="data:audio/mp3;base64,<?=base64_encode($result->inmedia)?>" type="audio/mpeg">
+<div><?php if($result->image_title=='0'){echo "ไม่มีตัวอย่างยา NULL";}else{?>
+<img  style="padding:20px;"    src="data:image/jpeg;base64,<?=base64_encode($result->image_title)?>" width="700"   />
+<?php }?><br><?php if($result->inmedia=='0'){echo "ไม่มีเสียงยา NULL";}else{?>
+<audio  id="test-audio-element"
+ width="300"  height="32" controls="controls"  src="data:audio/mp3;base64,<?=base64_encode($result->inmedia)?>" type="audio/mpeg">
  
  
-</audio></div>
+</audio><?php }?></div>
 <div>
  
  <script>
@@ -81,7 +83,9 @@ function playVid() {
 } 
  
 </script>
-  <h1><img  style="padding:20px;"    src="data:image/jpeg;base64,<?=base64_encode($result->image_detail)?>" width="80%"   /></h1>
+  <h1><?php if($result->image_detail=='0'){echo "ไม่มีข้อมูลยา NULL";}else{?><img  style="padding:20px;"    src="data:image/jpeg;base64,<?=base64_encode($result->image_detail)?>" width="80%"   />
+  <?php }?>
+  </h1>
 </div> 
  
 </body>

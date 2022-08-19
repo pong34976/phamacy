@@ -8,4 +8,4 @@
  <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.js"></script>
   </head>
   <body><form class="uk-form-stacked" action="" method="POST"  enctype="multipart/form-data">
-  <input class="uk-input" name="create" type="hidden" value="1" >
+  <input class="uk-input" name="update" type="hidden" value="1" >
