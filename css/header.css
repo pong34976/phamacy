@@ -1,0 +1,105 @@
+    
+body,html {
+    background-color: #e6e6e6;
+ }
+ .mh-site-logo{
+    
+     
+   padding: 0px;
+     margin: 0px 0px auto;
+    background-image: url("../imagesweb/59949293_1287817308063441_5125844396041830400_n.png");
+     width:101px; 
+     height:101px;
+ }
+.uk-container{
+    background-color: #3a3a3a;
+   height:40px;
+   background-image: url("../imagesweb/images/Untitled-1_06.jpg");
+   background-size: 100%;
+   background-repeat: no-repeat, repeat;
+}
+.mh-site-identity {
+    height: 150px;
+    max-width: 1200px;
+    background-size: 100%;
+    background-repeat: no-repeat, repeat;
+  
+background-image: url("../imagesweb/images/Untitled-1_03.gif");
+}
+h4.mh-header-tagline{
+    margin: 0 ;
+}
+.mh-header-text{
+ padding: 30px;
+ margin: 0 auto;
+ padding: 0px;
+ color: #ffffff;
+}
+.mh-header-title{
+    margin: 25px auto;
+    margin-left: 100px;
+    
+}
+.ad_navicon_toggle{
+    display: none;
+   
+    }
+    
+    .uk-active{
+        background-color: #cfc4c8;
+     height:60px;
+    }
+    .uk-parent{
+ color: rgb(255, 166, 0);
+    }
+    /* When the screen is less than 800 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+    @media screen and (max-width: 800px) {
+    .ad_navtext_toggle {display: none;}
+    .ad_navicon_toggle {display: block;}
+    .mh-header-text{    text-align: center;  }
+    .mh-site-identity,.uk-container{    background-size: 1200px; }
+   
+    }
+    .ad_navtext_toggle{
+   height:41px;
+    }
+    .uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle
+    {
+        min-height: 40px;
+    }
+    .main{
+        margin: 0 auto;
+      
+        max-width: 1279px;
+       
+        background-repeat: no-repeat, repeat;
+  
+        background-color: #140601;
+    }
+
+    .content,.uk-card {
+       
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        color:rgb(0, 0, 0);
+    }
+    .content {
+        padding: 20px;
+    }
+    A:link	{
+        text-decoration:none;
+        }
+        A:visited	{
+        text-decoration:none;
+        }
+
+    .content{
+        background-color: #ccb7af;
+    }
+    .uk-navbar-nav>li>a{
+        color:#ffff;
+    }
+    .uk-navbar-nav>li.uk-active>a{
+        color:#000;
+    }
